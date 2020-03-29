@@ -1,6 +1,6 @@
-# Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+# Outlook Contacts [![bitHound Score][bithound-img]][bithound-url]
 
-A PhoneGap Hello World template
+Outlook Contacts in ajax and jquery
 
 ## Usage
 
