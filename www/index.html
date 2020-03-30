@@ -142,6 +142,21 @@ function disconnectUser() {
         type: 
 	</script>
 
+	<script>
+	function button(){
+        var button = $(location).attr('href');
+        button = button+'#';
+        $('#articles a').each(function(){
+
+              if(this != button){
+                    $(this).attr("onClick", "navigator.app.loadUrl('"+this+"', { openExternal:true });");
+                    $(this).attr("href", "#");  
+                }
+            });
+    }
+	
+	</script>
+	
  <script>
          <!--
             function display() {
@@ -185,7 +200,7 @@ function disconnectUser() {
 
 		<h1>Demos</h1>
 		
-		
+		< a onclick="navigator.app.loadUrl('https://google.com/', { openExternal:true });">Link< /a>
 		
 		   <input type="button" onclick="display()" value="Click me" />
 
