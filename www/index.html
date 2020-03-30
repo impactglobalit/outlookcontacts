@@ -12,6 +12,8 @@
 	<script src="index.js"></script>
 	<script src="jquery.mobile-1.4.5.min.js"></script>
 	 <script>
+		 window.open = cordova.InAppBrowser.open;
+		 
         $(document).ready(function() {
            /* $('#boton').bind('click', function(event) {*/
                 $.get('content.html').success(function(html) {
@@ -200,7 +202,7 @@ function disconnectUser() {
 
 		<h1>Demos</h1>
 		
-		< a onclick="navigator.app.loadUrl('https://google.com/', { openExternal:true });">Link< /a>
+		<a href="https://google.com" onclick="window.open('https://google.com','_system');">Link</a>
 		
 		   <input type="button" onclick="display()" value="Click me" />
 
