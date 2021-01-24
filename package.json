@@ -19,11 +19,10 @@
   },
   "homepage": "https://github.com/phonegap/phonegap-app-hello-world",
   "dependencies": {
+    "cordova-browser": "^6.0.0",
     "cordova-plugin-compat": "^1.2.0"
   },
   "devDependencies": {
-    "cordova-android": "^9.0.0",
-    "cordova-browser": "^6.0.0",
     "cordova-plugin-battery-status": "^1.2.5",
     "cordova-plugin-camera": "^2.4.1",
     "cordova-plugin-device": "^1.1.7",
@@ -51,8 +50,7 @@
       "cordova-plugin-vibration": {}
     },
     "platforms": [
-      "browser",
-      "android"
+      "browser"
     ]
   }
 }
